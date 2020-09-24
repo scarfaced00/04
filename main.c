@@ -1,19 +1,17 @@
-/*실습1*/
 #include <stdio.h>
-int main() {
+/*실습2*/
+int main()
+{
+	int a, b;
 
-	int x, y, z, m;
-	int a, b, c;
+	printf("input two integers :");
+	scanf("%d %d", &a, &b);
 
-	x = 1;
-	a = 3;
-	b = 4;
-	c = 5;
-
-	y = a*x*x + b*x + c;
-	m = (x + y + z) / 3;
-
-	printf("y=%d,m=%d", y, m);
+	printf("+ result is %d\n", a + b);
+	printf("- result is %d\n", a - b);
+	printf("* result is %d\n", a*b);
+	printf("/ result is %d\n", a / b);
+	printf("%% result is %d\n", a%b);
 
 	return 0;
 }
