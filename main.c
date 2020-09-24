@@ -1,19 +1,22 @@
 #include <stdio.h>
-/*실습4*/
+/*실습5*/
 int main()
 {
-	int year;
+	unsigned int x;
+	int b;
 
-	printf("input the year :");
-	scanf("%d", &year);
+	printf("input a number : ");
+	scanf("%ui", &x);
 
-	//400으로 나누어 떨어지면 윤년임
-	if (year == 400)
-		printf("is the year %d the leap year? : %i", year, year % 400 == 0);
-	else //아니면 4로나눠지는데 100으로 나누어지지않으면
+	for (b = 0; x != 0; x >>= 1)
 	{
-		printf("is the year %d the leap year? : %i", year, (year % 4 == 0) && (year % 100 != 0));
+		if (x & 1)
+		{
+			b++;
+		}
 	}
+
+	printf("The result is : %i\n", b);
 	return 0;
 
 }
