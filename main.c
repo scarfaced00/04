@@ -1,17 +1,12 @@
 #include <stdio.h>
-/*실습2*/
+/*실습3*/
 int main()
 {
-	int a, b;
+	int sec;
 
-	printf("input two integers :");
-	scanf("%d %d", &a, &b);
-
-	printf("+ result is %d\n", a + b);
-	printf("- result is %d\n", a - b);
-	printf("* result is %d\n", a*b);
-	printf("/ result is %d\n", a / b);
-	printf("%% result is %d\n", a%b);
+	printf("input the second :");
+	scanf("%d", &sec);
+	printf("the time is %d : %d\n", sec / 60, sec % 60);
 
 	return 0;
 }
